@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ============FAVICON=========== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- ============CDN=========== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- !-- Link Swiper's CSS --> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- ============Custom-CSS=========== -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>shopify</title>
+</head>
+<body>
+    <!-- ============Header-top=========== -->
+    <header class="header">
+        <div class="section-margin header-top d-flex justify-content-between align-items-center">
+            <!-- Currency -->
+            <div class="currency">
+                <a href="#" class="currency-btn">
+                   <span class="btn-text">usd$</span>
+                   <i class="fa-solid fa-angle-down"></i>
+                </a>
+                <!-- options -->
+                 <ul class="options">
+                    <li class="option">
+                        <span class="opt-text">USD$</span>
+                    </li>
+                    <li class="option">
+                        <span class="opt-text">TK$</span>
+                    </li> 
+                    <li class="option">
+                        <span class="opt-text">Ero$</span>
+                    </li> 
+                    <li class="option">
+                        <span class="opt-text">AUD$</span>
+                    </li> 
+                 </ul>
+            </div>
+            <!-- Announcement -->
+            <div class="announce">
+                <p class="">
+                    Enjoy <span>FREE</span> standard delivery on orders over <a href="#">$100</a>
+                </p>
+            </div>
+            <!-- Social-Icon -->
+            <div class="social-icon">
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-pinterest"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- ============MENU=========== -->
+    <nav class="navbar main-menu bg-body-tertiary section-margin align-items-center justify-content-between position-relative">
+        <!-- toggele Icon -->
+        <a href="#" class="d-none toggle-icon">
+            <i class="fa-solid fa-bars nav-open"></i>
+        </a>
+        <!-- Menu-List -->
+        <ul class="nav">
+            <!-- close-icons -->
+            <i class="fa-solid fa-x nav-close"></i>
+            <li class="nav-item hover-active">
+              <a class="nav-link text-uppercase fw-bold" href="#">Home
+                <i class="fa-solid fa-angle-down icon-hover"></i>
+              </a>
+              
+            </li>
+            <li class="nav-item hover-active">
+              <a class="nav-link text-uppercase fw-bold" href="#">
+                Shop
+                <i class="fa-solid fa-angle-down icon-hover"></i>
+              </a>
+              
+            </li>
+            <li class="nav-item hover-active">
+              <a class="nav-link text-uppercase fw-bold" href="#">
+                Pages
+                <i class="fa-solid fa-angle-down icon-hover"></i>
+              </a>
+              
+            </li>
+            <li class="nav-item hover-active">
+              <a class="nav-link text-uppercase fw-bold" href="#">
+                Blog
+                <i class="fa-solid fa-angle-down icon-hover"></i>
+              </a>
+              
+            </li>
+            <li class="nav-item hover-active">
+                <a class="nav-link text-uppercase fw-bold" href="#">
+                    Sale
+                    <i class="fa-solid fa-angle-down icon-hover"></i>
+                </a>
+            </li>
+            <li class="nav-item hover-active">
+                <a class="nav-link text-uppercase fw-bold" href="#">
+                    Contact
+                    <i class="fa-solid fa-angle-down icon-hover"></i>
+                </a>
+            </li>
+        </ul>
+        <!-- Logo -->
+        <a href="#" class="logo">
+            <img src="assets/img/logo.png" alt="logo" class="img-fluid">
+        </a>
+
+        <!-- login cart search -->
+        <div class="iconbox">
+            <a href="#" class="text-uppercase fw-bold">
+                <span class="log-text">login</span>
+                <i class="fa-solid fa-user login-icon"></i>
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-magnifying-glass show-search"></i>
+            </a>
+            <a href="#">
+                <i class="fa-regular fa-heart"></i>
+            </a>
+            <a href="#" class="cart">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <div class="number"><span>0</span></div>
+                
+            </a>
+            
+        </div>
+        <div class="searc-box">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            </div>
+            <i class="fa-solid fa-x close-search"></i>
+        </div>
+    </nav>
+    <!-- ============Menu-Bottom=========== -->
+     <div class="menu-bottom py-2">
+        <div class="container d-flex flex-row gap-2 align-items-center justify-content-start">
+            <a href="#" class="">Home</a>
+            <i class="fa-solid fa-o"></i>
+            <a href="#">Accessories</a>
+            <i class="fa-solid fa-o"></i>
+            <a href="">Regular Fit Easy-iron Shirt</a>
+        </div>
+     </div>
+    <!-- ============Single-product=========== -->
+    <section class="single-product mt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="product-img">
+                        
+    
+                        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+                            <div class="swiper-wrapper" style="height: 650px;">
+                              <div class="swiper-slide" style="height: 100%;">
+                                <img src="assets/img/product (1).png" class="w-100" style="height: 100%;" />
+                              </div>
+                              <div class="swiper-slide" style="height: 100%;" >
+                                <img src="assets/img/product (2).png" class="w-100" style="height: 100%;"/>
+                              </div>
+                              <div class="swiper-slide" style="height: 100%;">
+                                <img src="assets/img/product (3).png" class="w-100" style="height: 100%;"/>
+                              </div>
+                              <div class="swiper-slide"style="height: 100%;" >
+                                <img src="assets/img/product (1).png" class="w-100" style="height: 100%;"/>
+                              </div>
+                              <div class="swiper-slide" style="height: 100%;">
+                                <img src="assets/img/product (2).png" class="w-100" style="height: 100%;"/>
+                              </div>
+                              <div class="swiper-slide" style="height: 100%;">
+                                <img src="assets/img/product (1).png" class="w-100" style="height: 100%;"/>
+                              </div>
+                              
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+    
+                            
+                        </div>
+                         
+                        <div thumbsSlider="" class="swiper mySwiperone mt-2">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide thumb-size">
+                                <img src="assets/img/product (1).png" class="w-100"/>
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="assets/img/product (2).png" class="w-100"/>
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="assets/img/product (3).png" class="w-100"/>
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="assets/img/product (1).png" class="w-100"/>
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="assets/img/product (2).png" class="w-100"/>
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="assets/img/product (1).png" class="w-100"/>
+                              </div>
+                            </div>
+                        </div>
+                          
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="product-info px-sm-0 px-lg-4">
+                        <div class="stock-review d-flex justify-content-between">
+                            <span class="stock">In stock</span>
+                            <div class="review">
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <a href="#">review <span>0</span></a>
+                            </div>
+                        </div>
+                        <h2 class="product-title">Regular Fit Easy-iron Shirt</h2>
+                        <div class="price">
+                            <span class="price1">$129.00</span>
+                            <span class="price-of">$159.00</span>
+                        </div>
+                        <div class="product-dec mt-4">
+                            <p>Jeans can be the key to your look. 
+                                The store offers a huge number of models for every taste and style. 
+                                Choose jeans in the online store with 
+                                pleasure! Pay attention to three key... 
+                            </p>
+                        </div>
+                        <div class="product-btn mt-4">
+                            <a href="#" class="btn-custom">
+                                ADD TO CART
+                            </a>
+                            <a href="#" class="btn-custom">
+                                BUY NOW
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="releted-product py-5">
+        <div class="container">
+            <h3 class="fw-bold text-center mt-3">Related Product</h3>
+            <div class="related-slider mt-5">
+                <div class="swiper reSlider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="position-relative single-item">
+                            <img src="assets/img/product (1).png" alt="product" class="img-fluid">
+                            <div class="price-title d-flex flex-column gap-2 mt-4 align-items-center">
+                                <p>Regular Fit Easy Iron Shirt</p>
+                                <div class="price d-flex gap-3">
+                                    <span class="off-price">$108</span>
+                                    <span class="regular-price">$150</span>
+                                </div>
+                            </div>
+                            <div class="quick-cart d-flex flex-row gap-3">
+                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                <span><i class="fa-regular fa-eye"></i></span>
+                            </div>
+                            <span class="whislist"><i class="fa-regular fa-heart"></i></span>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="position-relative single-item">
+                            <img src="assets/img/product (1).png" alt="product" class="img-fluid">
+                            <div class="price-title d-flex flex-column gap-2 mt-4 align-items-center">
+                                <p>Regular Fit Easy Iron Shirt</p>
+                                <div class="price d-flex gap-3">
+                                    <span class="off-price">$108</span>
+                                    <span class="regular-price">$150</span>
+                                </div>
+                            </div>
+                            <div class="quick-cart d-flex flex-row gap-3">
+                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                <span><i class="fa-regular fa-eye"></i></span>
+                            </div>
+                            <span class="whislist"><i class="fa-regular fa-heart"></i></span>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="position-relative single-item">
+                            <img src="assets/img/product (1).png" alt="product" class="img-fluid">
+                            <div class="price-title d-flex flex-column gap-2 mt-4 align-items-center">
+                                <p>Regular Fit Easy Iron Shirt</p>
+                                <div class="price d-flex gap-3">
+                                    <span class="off-price">$108</span>
+                                    <span class="regular-price">$150</span>
+                                </div>
+                            </div>
+                            <div class="quick-cart d-flex flex-row gap-3">
+                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                <span><i class="fa-regular fa-eye"></i></span>
+                            </div>
+                            <span class="whislist"><i class="fa-regular fa-heart"></i></span>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="position-relative single-item">
+                            <img src="assets/img/product (1).png" alt="product" class="img-fluid">
+                            <div class="price-title d-flex flex-column gap-2 mt-4 align-items-center">
+                                <p>Regular Fit Easy Iron Shirt</p>
+                                <div class="price d-flex gap-3">
+                                    <span class="off-price">$108</span>
+                                    <span class="regular-price">$150</span>
+                                </div>
+                            </div>
+                            <div class="quick-cart d-flex flex-row gap-3">
+                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                <span><i class="fa-regular fa-eye"></i></span>
+                            </div>
+                            <span class="whislist"><i class="fa-regular fa-heart"></i></span>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="position-relative single-item">
+                            <img src="assets/img/product (1).png" alt="product" class="img-fluid">
+                            <div class="price-title d-flex flex-column gap-2 mt-4 align-items-center">
+                                <p>Regular Fit Easy Iron Shirt</p>
+                                <div class="price d-flex gap-3">
+                                    <span class="off-price">$108</span>
+                                    <span class="regular-price">$150</span>
+                                </div>
+                            </div>
+                            <div class="quick-cart d-flex flex-row gap-3">
+                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                <span><i class="fa-regular fa-eye"></i></span>
+                            </div>
+                            <span class="whislist"><i class="fa-regular fa-heart"></i></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============Footer=========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo d-flex align-items-center justify-content-center">
+                <img src="assets/img/logo.png" alt="logo" class="img-fluid">
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-3">
+                    <ul class="d-flex flex-column gap-3 mt-5 align-items-center">
+                        <li></li>
+                            <a href="#">My account</a>
+                        </li>
+                        <li>
+                            <a href="#">log in</a>
+                        </li>
+                        <li>
+                            <a href="#">My Address</a>
+                        </li>
+                        <li>
+                            <a href="#">Order Tracking</a>
+                        </li>
+                        <li>
+                            <a href="#">Payment Method</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 order-first">
+                    <div class="subscribe d-flex flex-row align-items-center justify-content-between mt-4">
+                        <div class="form-floating">
+                            <input type="email" class="form-control" id="floatingInputGroup1" placeholder="Email Address">
+                            <label for="floatingInputGroup1">Email Address</label>
+                        </div>
+                        <a href="#" class="btn-custom">SUBSCRIBE</a>
+                    </div>
+                    <div class="social-icon d-flex align-items-center justify-content-center gap-4 mt-5">
+                        <a href="#">
+                            <i class="fa-brands fa-instagram fs-5"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-facebook-f fs-5"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-youtube fs-5"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-x-twitter fs-5"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-pinterest fs-5"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <ul class="d-flex flex-column gap-3 mt-5 align-items-center">
+                        <li></li>
+                            <a href="#">My account</a>
+                        </li>
+                        <li>
+                            <a href="#">log in</a>
+                        </li>
+                        <li>
+                            <a href="#">My Address</a>
+                        </li>
+                        <li>
+                            <a href="#">Order Tracking</a>
+                        </li>
+                        <li>
+                            <a href="#">Payment Method</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copy">
+                <span>© 2024 - Biponi . All rights reserved</span>
+            </div>
+        </div>
+    </footer>
+    <!-- ============Bootstap-CDN=========== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+      <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- ============Custom-JS=========== -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
